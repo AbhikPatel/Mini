@@ -1,0 +1,430 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+
+    height: 80px;
+    width: 100%;
+    background-color:#212F3D;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 999;
+    top: 0%;
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+
+}
+
+#logo{
+    color: white;
+    font-size: 2rem;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.ulwala{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    left: 800px;
+}
+
+.liwala{
+    line-height: 80px;
+}
+
+
+
+.links{
+
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    transition: 0.5s all ease;
+}
+
+.links:hover{
+    
+    color: #07F560;
+    transition: 0.5s all ease;
+
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 1rem;
+  width: 100%;
+  margin-left: 500px;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #07F560;
+    color: black;
+}
+
+.sign:hover{
+
+    border: 3px solid #07F560;
+    color: #07F560;
+    background-color: #212F3D;
+    transition: 0.5s all ease;
+}
+
+@media screen and (max-width: 960px) {
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0%;
+    }
+
+    .ulwala{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0%;
+        width: 100%;
+        left: -0px;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.8s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: black;
+    }
+
+    .ulwala.active{
+        background: black;
+        top:100%;
+        opacity: 1;
+        transition: all 0.8s ease;
+        z-index: 99;
+        height: 70vh;
+        font-size: 1.6rem;
+    }
+
+    .btn{
+        padding-bottom: 2rem;
+        margin-left: 0px;
+    }
+
+    .sign{
+        display: flex;
+        justify-content: center;
+        padding: 10px 350px;
+    }
+
+    #logo{
+        padding-left: 30px;
+    }
+
+    .hamburger .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+
+    .liwala{
+        width: 100%;      
+    }
+
+    .links{
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+
+    
+    #mobile{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .hamburger .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* hero section  */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1900px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+  
+.main {
+    color: black;
+    width: 100%;
+}
+  
+.main h1 {
+    font-size: 4rem;
+    background-size: 100%;
+}
+
+.main p{
+    margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ex {
+    font-size: 1rem;
+    background-color: #07F560;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+  
+.ex a {
+    position: relative;
+    z-index: 2;
+    color: black;
+    text-decoration: none;
+}
+
+.svg {
+    text-align: center;
+  }
+  
+#idwala {
+    height: 80%;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-self: center;
+      width: 100%;
+      margin: 0 auto;
+      height: 90vh;
+    }
+  
+    .main{
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+  
+    .main h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+  
+    .main h2 {
+      font-size: 3rem;
+    }
+  
+    .main p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .main h1 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  
+    .main h2 {
+      font-size: 2rem;
+    }
+  
+    .main p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+  
+    .ex {
+      padding: 12px 36px;
+      margin: 2.5rem 0;
+    }
+  }
+
+  /* Services Section */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .services h1 {
+    color: black;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+  
+  .services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('/images/pic3.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .services__card:before {
+    opacity: 0.2;
+  }
+  
+  .services__card:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('/images/pic4.jpg');
+  }
+  
+  .services__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .services__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .services__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #07F560;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .services__card button:hover {
+    cursor: pointer;
+  }
+  
+  .services__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .services {
+      height: 1600px;
+    }
+  
+    .services h1 {
+      font-size: 2rem;
+      margin-top: 12rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .services {
+      height: 1400px;
+    }
+  
+    .services h1 {
+      font-size: 1.2rem;
+    }
+  
+    .services__card {
+      width: 300px;
+    }
+  }
+  
