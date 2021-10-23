@@ -23,7 +23,7 @@
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1800px;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -67,7 +67,7 @@
   align-items: center;
   padding: 0 1rem;
   width: 100%;
-  padding-left: 500px;
+  /* padding-left: 400px; */
 }
 
 .sign {
@@ -128,11 +128,12 @@
     transition: all 0.5s ease;
     z-index: 99;
     height: 80vh;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   #logo {
     padding-left: 25px;
+    font-size: 1.6rem;
   }
 
   .hamburger .bar {
@@ -156,7 +157,6 @@
 
   .btn {
     padding-bottom: 2rem;
-    margin-left: -240px;
   }
 
   .sign {
@@ -297,7 +297,7 @@
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
   }
 
   .content {
@@ -306,17 +306,23 @@
   }
 
   .content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
   }
 
   .content h2 {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
 
   .content p {
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+
+  .finish{
+    position: relative;
+    top: -100px;
+    background-color: red;
   }
 }
 
@@ -353,7 +359,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 70vh;
+  height: 90%;
   z-index: 1;
   width: 100%;
   max-width: 1700px;
@@ -483,25 +489,26 @@
 
 @media screen and (max-width: 480px) {
   .card {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   .ab__content h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-top: 3rem;
   }
   .ab__content h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .ab__content p {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
   }
 
   .ab__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+    font-size: 1rem;
   }
 }
 
@@ -512,7 +519,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100%;
   padding: 10rem 0;
 }
 
@@ -595,6 +602,10 @@
   .services__wrapper {
     grid-template-columns: 1fr;
   }
+
+  .services h1{
+    font-size: 2rem;
+  }
 }
 
 
@@ -610,7 +621,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 70vh;
+  height: 90%;
   z-index: 1;
   width: 100%;
   max-width: 1500px;
@@ -745,20 +756,21 @@
   }
 
   .feature__content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 3rem;
   }
   .feature__content h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .feature__content p {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
   }
 
   .feature__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+    font-size: 1.2rem;
   }
 }
 
