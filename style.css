@@ -122,13 +122,29 @@
   }
 
   .ulwala.active {
-    background: #131313;
+    background: rgba(0,0,0,0.7);
     top: 100%;
-    opacity: 1;
+    opacity: 1.5;
     transition: all 0.5s ease;
     z-index: 99;
     height: 80vh;
     font-size: 1.2rem;
+  }
+
+  .main.active{
+    filter: blur(5px);
+  }
+
+  .ab.active{
+    filter: blur(5px);
+  }
+
+  .services.active{
+    filter: blur(5px);
+  }
+
+  .feature.active{
+    filter: blur(5px);
   }
 
   #logo {
@@ -322,7 +338,6 @@
   .finish{
     position: relative;
     top: -100px;
-    background-color: red;
   }
 }
 
@@ -331,6 +346,8 @@
     font-size: 2rem;
     margin-top: 3rem;
   }
+
+  
 
   .content h2 {
     font-size: 2rem;

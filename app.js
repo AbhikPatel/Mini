@@ -1,11 +1,19 @@
 const menu = document.querySelector('#mobile');
 const menuLinks = document.querySelector('.ulwala');
+const hero = document.querySelector('.main');
+const about = document.querySelector('.ab');
+const servic = document.querySelector('.services');
+const unque = document.querySelector('.feature');
 const navLogo = document.querySelector('#logo');
 
 
 const mobileMenu = () => {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
+    hero.classList.toggle('active');
+    about.classList.toggle('active');
+    servic.classList.toggle('active');
+    unque.classList.toggle('active');
 };
 
 menu.addEventListener('click', mobileMenu);
