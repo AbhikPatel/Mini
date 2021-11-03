@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans:ital@1&family=Zen+Kurenaido&display=swap');
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'PT Sans', sans-serif;
-  font-family: 'Zen Kurenaido', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Poppins', sans-serif; 
+  /* font-family: 'PT Sans', sans-serif; */
+  /* font-family: 'Zen Kurenaido', sans-serif; */
+  scroll-behavior: smooth;
 }
 
 video{
@@ -311,4 +313,52 @@ video{
 }
 .social-menu ul li:nth-child(5) a:hover {
   background-color: #0077B5;
+}
+
+@media screen and (max-width: 960px) {
+
+  .container{
+    position: absolute;
+    width: 90%;
+    height: 50vh;
+    padding: 50px;
+    margin-left: 50px;
+    top: 100px;
+    /* background-color: yellow; */
+  }
+  
+  .container h1{
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container h5{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .btn2 {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .social-menu{
+    background-color: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: none;
+  }
+  
 }
