@@ -1,52 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans:ital@1&family=Poppins&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans:ital@1&family=Poppins&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/2fa4fa7829.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>KHEL MAHAKHUBM</title>
 </head>
+
 <body>
     <div class="main">
         <video src="ground.mp4" autoplay muted loop></video>
         <nav class="navbar">
-            <div class="logo"><a href="#"> KHEL MAHAKHUBM </a></div>
+            <div class="logo"><a href="#home"> KHEL MAHAKHUBM </a></div>
             <div class="hamburger" id="mobile">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
             <ul class="menu">
-                <li class="items"><a href="#" class="links"> Home </a></li>
-                <li class="items"><a href="#" class="links"> Events </a></li>
+                <li class="items"><a href="#home" class="links"> Home </a></li>
+                <li class="items"><a href="#event" class="links"> Events </a></li>
                 <li class="items"><a href="#" class="links"> About </a></li>
-                <li class="items"><a href="#" class="links"> Contact </a></li>
+                <li class="items"><a href="#contacts" class="links"> Contact </a></li>
                 <li class="btn"><a href="#" class="sign"> Sign up </a></li>
             </ul>
-            
         </nav>
-        <div class="hero">
+
+        <!-- hero section -->
+        <div class="hero" id="home">
             <div class="container">
-                <h1> KHEL MAHAKHUBM ME AAPKA SWAGAT HAI</h1>
-                <h5> A Place where all professional players compete with each other to become one Champions</h5>
-                <div class="btn2"> <a href="#" class="click"> DEMO </a></div>
-                <div class="social-menu">
-                    <ul>
-                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                      <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                      <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                  </div>
+                <h1 class="heading">Welcome to <br><span>KHEL MAHAKHUBM</span></h1>
+                <p class="description">A Place where all Professional Players <br> Come together <br> Compete each other
+                    and <br> fight for becoming a CHAMPION</p>
+                <div class="btn2"><a href="#" class="demo">Explore</a></div>
             </div>
         </div>
+
+        <!-- Events Section  -->
+
+        <div class="main2" id="event">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>EVENTS</h1>
+                    <p>Events are a group of games organized and maintain by Admins. In our websites we give
+                        a platform where admins can organized Events and maintain. Any particular Participate
+                        can visit this panel and Participate for the games available in the Events. But first He/She
+                        should register for an Student Account for registration.</p>
+                    <button class="main__btn"><a href="#"> Available Events </a></button>
+                </div>
+                <div class="main__img--container">
+                    <img id="main__img" src="events.svg" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form  -->
+        <section id="contacts">
+            <div class="contact">
+                <h2> Contact Us Form</h2>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text"> First Name </span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span class="text"> Last Name </span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputbox">
+                                <input type="text" name="" required="required">
+                                <span class="text"> Email </span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputbox">
+                                <input type="text" name="" required="required">
+                                <span class="text"> Mobile </span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputbox textarea">
+                                <textarea required="required"></textarea>
+                                <span class="text"> Type Your Message </span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <input type="submit" value="SEND">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
