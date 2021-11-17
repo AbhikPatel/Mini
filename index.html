@@ -17,7 +17,6 @@
 
 <body>
     <div class="main">
-        <video src="ground.mp4" autoplay muted loop></video>
         <nav class="navbar">
             <div class="logo"><a href="#home"> KHEL MAHAKHUBM </a></div>
             <div class="hamburger" id="mobile">
@@ -28,6 +27,7 @@
             <ul class="menu">
                 <li class="items"><a href="#home" class="links"> Home </a></li>
                 <li class="items"><a href="#event" class="links"> Events </a></li>
+                <li class="items"><a href="#service" class="links"> Services </a></li>
                 <li class="items"><a href="#" class="links"> About </a></li>
                 <li class="items"><a href="#contacts" class="links"> Contact </a></li>
                 <li class="btn"><a href="#" class="sign"> Sign up </a></li>
@@ -40,12 +40,15 @@
                 <h1 class="heading">Welcome to <br><span>KHEL MAHAKHUBM</span></h1>
                 <p class="description">A Place where all Professional Players <br> Come together <br> Compete each other
                     and <br> fight for becoming a CHAMPION</p>
-                <div class="btn2"><a href="#" class="demo">Explore</a></div>
+                <!-- <div class="btn2"><a href="#" class="demo">Explore</a></div> -->
+            </div>
+            <div class="png">
+                <img src="home.png" alt="">
             </div>
         </div>
+    </div>    
 
         <!-- Events Section  -->
-
         <div class="main2" id="event">
             <div class="main__container">
                 <div class="main__content">
@@ -61,6 +64,44 @@
                 </div>
             </div>
         </div>
+    
+    <!-- Service Section  -->
+    <div class="waiter" id="service">
+        <div class="servicebox">
+            <div class="icon">
+                <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <div class="content">
+                <h2> 24/7 </h2>
+                <p> The Participation process is online and its available throught
+                    our website and its available all 24/7 time.
+                </p>
+            </div>
+        </div>
+        <div class="servicebox">
+            <div class="icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+            <div class="content">
+                <h2> Admin organized </h2>
+                <p> The event is organized by Admin and Managed by the
+                    co-ordinators.
+                </p>
+            </div>
+        </div>
+        <div class="servicebox">
+            <div class="icon">
+                <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="content">
+                <h2> Live Scoreboard </h2>
+                <p> We have a Unique feature which is Live Score Board which
+                    shows live score of an ongoing match throught online on
+                    our website
+                </p>
+            </div>
+        </div>
+    </div>
 
         <!-- Contact Form  -->
         <section id="contacts">
@@ -116,7 +157,9 @@
                 </div>
         </section>
 
-    </div>
+        
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="app.js"></script>
 </body>
 
