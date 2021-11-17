@@ -301,8 +301,8 @@
 
   .png{
     position: relative;
-    right: 780px;
-    margin-top: 450px;
+    right: 900px;
+    margin-top: 550px;
   }
   
   .heading {
@@ -322,13 +322,35 @@
 
 @media screen and (max-width: 480px) {
 
+  .container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-left: 10px solid #3f3752;
+    border-right: 10px solid #3f3752;
+    width: 70%;
+  }
+
+  .hero{
+    height: 130vh;
+  }
+
+  .png{
+    position: relative;
+    right: 860px;
+    margin-top: 550px;
+    width: 250px;
+    height: 250px;
+  }
+  
   .heading {
     font-size: 30px;
   }
 
   .description {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .demo{
@@ -478,7 +500,7 @@
 @media screen and (max-width: 480px) {
   
   .main__container{
-    height: 110vh;
+    height: 130vh;
   }
   .main__content h1 {
     font-size: 2rem;
@@ -769,4 +791,19 @@ section{
   .waiter .servicebox{
     padding: 0px 30px;
   }
+}
+
+@media (max-width: 480px) {
+  .waiter{
+    height: 200vh;
+    gap: 10px;
+    padding: 0 30px;
+  }
+
+  .waiter .servicebox{
+    padding: 0px 30px;
+    width: 250px;
+    height: 350px;
+  }
+
 }
