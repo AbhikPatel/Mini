@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito&family=PT+Sans:ital@1&family=Poppins&family=Zen+Kurenaido&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/2fa4fa7829.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>KHEL MAHAKHUBM</title>
+    <title>Khel MahaKhumb</title>
 </head>
 
 <body>
@@ -25,76 +25,72 @@
                 <span class="bar"></span>
             </div>
             <ul class="menu">
-                <li class="items"><a href="#home" class="links"> Home </a></li>
-                <li class="items"><a href="#event" class="links"> Events </a></li>
-                <li class="items"><a href="#service" class="links"> Services </a></li>
-                <li class="items"><a href="#" class="links"> About </a></li>
-                <li class="items"><a href="#contacts" class="links"> Contact </a></li>
+                <li class="items"><a href="#home" id="home-page" class="links"> Home </a></li>
+                <li class="items"><a href="#event" id="event-page" class="links"> Events </a></li>
+                <li class="items"><a href="#service" id="service-page" class="links"> Services </a></li>
+                <li class="items"><a href="#contact" id="contact-page" class="links"> Contact </a></li>
                 <li class="btn"><a href="#" class="sign"> Sign up </a></li>
             </ul>
         </nav>
 
-        <!-- hero section -->
-        <div class="hero" id="home">
-            <div class="container">
-                <h1 class="heading">Welcome to <br><span>KHEL MAHAKHUBM</span></h1>
-                <p class="description">A Place where all Professional Players <br> Come together <br> Compete each other
+        <!-- Hero Section -->
+        <div class="main__container" id="home">
+            <div class="main__content">
+                <h1>Welcome To</h1>
+                <h2>Khel MahaKhumb</h2>
+                <p>A Place where all Professional Players <br> Come together <br> Compete each other
                     and <br> fight for becoming a CHAMPION</p>
-                <!-- <div class="btn2"><a href="#" class="demo">Explore</a></div> -->
             </div>
-            <div class="png">
-                <img src="home.png" alt="">
+            <div class="main__img--container">
+                <img id="main__img" src="images/home.png" />
             </div>
         </div>
-    </div>    
+    </div>
 
-        <!-- Events Section  -->
-        <div class="main2" id="event">
-            <div class="main__container">
-                <div class="main__content">
-                    <h1>EVENTS</h1>
-                    <p>Events are a group of games organized and maintain by Admins. In our websites we give
-                        a platform where admins can organized Events and maintain. Any particular Participate
-                        can visit this panel and Participate for the games available in the Events. But first He/She
-                        should register for an Student Account for registration.</p>
-                    <button class="main__btn"><a href="#"> Available Events </a></button>
-                </div>
-                <div class="main__img--container">
-                    <img id="main__img" src="events.svg" />
-                </div>
+    <!-- Events Section  -->
+    <div class="events" id="event">
+        <div class="event__container">
+            <div class="event__img--container">
+                <div class="svg"> <img src="images/events.svg" alt=""></div>
+            </div>
+            <div class="event__content">
+                <h1> Events </h1>
+                <p> Events are a group of games organized and maintain by Admins. In our websites we give
+                    a platform where admins can organized Events and maintain. Any particular Participate
+                    can visit this panel and Participate for the games available in the Events. But first He/She
+                    should register for an Student Account for registration.</p>
+                <button class="event__btn"><a href="#"> Available Events </a></button>
             </div>
         </div>
-    
-    <!-- Service Section  -->
-    <div class="waiter" id="service">
-        <div class="servicebox">
-            <div class="icon">
+    </div>
+
+    <!-- Services Section  -->
+    <div class="services" id="service">
+        <div class="heading">
+            <h1> Services </h1>
+            <p> We Provide the best in class Services for our Customers.</p>
+        </div>
+        <div class="s-box-container">
+            <div class="s-box">
+                <div class="bar"></div>
                 <ion-icon name="time-outline"></ion-icon>
-            </div>
-            <div class="content">
-                <h2> 24/7 </h2>
+                <h1> 24/7 </h1>
                 <p> The Participation process is online and its available throught
                     our website and its available all 24/7 time.
                 </p>
             </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon">
-                <ion-icon name="person-circle-outline"></ion-icon>
-            </div>
-            <div class="content">
-                <h2> Admin organized </h2>
+            <div class="s-box">
+                <div class="bar"></div>
+                <ion-icon name="time-outline"></ion-icon>
+                <h1> Admin organized </h1>
                 <p> The event is organized by Admin and Managed by the
                     co-ordinators.
                 </p>
             </div>
-        </div>
-        <div class="servicebox">
-            <div class="icon">
-                <ion-icon name="bookmark-outline"></ion-icon>
-            </div>
-            <div class="content">
-                <h2> Live Scoreboard </h2>
+            <div class="s-box">
+                <div class="bar"></div>
+                <ion-icon name="time-outline"></ion-icon>
+                <h1> LiveScoreboard </h1>
                 <p> We have a Unique feature which is Live Score Board which
                     shows live score of an ongoing match throught online on
                     our website
@@ -103,64 +99,89 @@
         </div>
     </div>
 
-        <!-- Contact Form  -->
-        <section id="contacts">
-            <div class="contact">
-                <h2> Contact Us Form</h2>
-                <div class="row100">
-                    <div class="col">
-                        <div class="inputbox">
-                            <input type="text" name="" required="required">
-                            <span class="text"> First Name </span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="inputbox">
-                            <input type="text" name="" required="required">
-                            <span class="text"> Last Name </span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputbox">
-                                <input type="text" name="" required="required">
-                                <span class="text"> Email </span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="inputbox">
-                                <input type="text" name="" required="required">
-                                <span class="text"> Mobile </span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row100">
-                        <div class="col">
-                            <div class="inputbox textarea">
-                                <textarea required="required"></textarea>
-                                <span class="text"> Type Your Message </span>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row100">
-                        <div class="col">
-                            <input type="submit" value="SEND">
-                        </div>
-                    </div>
+    <!-- Contact Section  -->
+    <div class="contacts" id="contact">
+        <div class="form-wrapper">
+            <h2>contact us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">name<span class="star">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
                 </div>
-        </section>
-
-        
+                <div class="form-group">
+                    <label for="name">mobile number<span class="star">*</span></label>
+                    <input type="number" id="name" class="form-control" placeholder="Enter your number" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">subject&nbsp;<span class="optional">(optional)</span></label>
+                    <input type="text" id="subject" class="form-control" placeholder="Enter your subject" />
+                </div>
+                <div class="form-group">
+                    <label for="email">email<span class="star">*</span></label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">message<span class="star">*</span></label>
+                    <textarea id="message" class="form-control" placeholder="Your message here..." required cols="30"
+                        rows="10"></textarea>
+                </div>
+                <button class="submit-btn">send message</button>
+            </form>
+        </div>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="app.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Khel<span>MahaKhumb</span></h3>
+
+            <p class="footer-links">
+                <a href="#home">Home</a>
+                |
+                <a href="#event">Events</a>
+                |
+                <a href="#service">Services</a>
+                |
+                <a href="#contact">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>Khel MahaKhumb</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Gujarat</span>
+                    Valsad</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 7575048988</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="khelmahakhumb101@gmail.com">khelmahakhumb101@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About Us</span>
+                <strong>Khel MahaKhumb</strong> is a website where you can Create Events for a Large-scale Players in no time
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
