@@ -14,6 +14,8 @@ menu.addEventListener('click', mobileMenu);
 // Show active menu when scrolling
 const highlightMenu = () => {
   const elem = document.querySelector('.bottomline');
+  const navwala = document.querySelector('.magic');
+  const navbarwala = document.querySelector('.navbar');
   const homeMenu = document.querySelector('#home-page');
   const eventMenu = document.querySelector('#event-page');
   const serviceMenu = document.querySelector('#service-page');
@@ -26,11 +28,13 @@ const highlightMenu = () => {
     homeMenu.classList.add('bottomline');
     eventMenu.classList.remove('bottomline');
     contactMenu.classList.remove('bottomline');
+    navbarwala.classList.remove('magic');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1400) {
     eventMenu.classList.add('bottomline');
     homeMenu.classList.remove('bottomline');
     serviceMenu.classList.remove('bottomline');
+    navbarwala.classList.add('magic');
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1900) {
     serviceMenu.classList.add('bottomline');
