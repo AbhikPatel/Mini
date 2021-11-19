@@ -40,11 +40,13 @@ const highlightMenu = () => {
     serviceMenu.classList.add('bottomline');
     eventMenu.classList.remove('bottomline');
     contactMenu.classList.remove('bottomline');
+    navbarwala.classList.add('magic');
     return;
   }
   else if (window.innerWidth > 960 && scrollPos < 3000) {
     contactMenu.classList.add('bottomline');
     serviceMenu.classList.remove('bottomline');
+    navbarwala.classList.add('magic');
     return;
   }
 
@@ -65,5 +67,3 @@ const hideMobileMenu = () => {
   }
 };
 
-menuLinks.addEventListener('click', hideMobileMenu);
-navLogo.addEventListener('click', hideMobileMenu);
