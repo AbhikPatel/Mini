@@ -153,13 +153,13 @@
         opacity: 1;
         transition: all 0.8s ease;
         z-index: 99;
-        height: 60vh;
+        height: 70vh;
         font-size: 1.6rem;
     }
 
     .logo {
       padding-left: 35px;
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   
     .hamburger .bar {
@@ -335,7 +335,7 @@
     }
     
     .main__content h1 {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-top: 3rem;
     }
 
@@ -345,7 +345,7 @@
 
     .main__content p {
       margin-top: 2rem;
-      font-size: 10px;
+      font-size: 15px;
     }
 }
 
@@ -537,7 +537,7 @@
     }
   
     .event__content h1 {
-      font-size: 1rem;
+      font-size: 1.3rem;
       margin-top: 3rem;
     }
     .event__content h2 {
@@ -546,7 +546,7 @@
   
     .event__content p {
       margin-top: 2rem;
-      font-size: 10px;
+      font-size: 15px;
     }
   
     .event__btn {
@@ -694,11 +694,11 @@
     }
 
     .heading h1{
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
     .heading p{
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .s-box{
@@ -708,11 +708,11 @@
     }
 
     .s-box h1{
-      font-size: 1rem;
+      font-size: 1.3rem;
   }
 
   .s-box p{
-    font-size: 10px;
+    font-size: 15px;
 }
 }
 
@@ -822,19 +822,19 @@
 
     .form-wrapper h2 {
       margin-bottom: 20px;
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
     .form-group label{
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .form-group .form-control{
-      font-size: 10px;
+      font-size: 15px;
     }
 
     span .optional{
-      font-size: 10px;
+      font-size: 15px;
     }
   }
   
@@ -1035,6 +1035,6 @@ footer {
   }
 
   .footer-distributed h3 span h1{
-      font-size: 1rem;
+      font-size: 1.3rem;
   }
 }     
